@@ -1,0 +1,39 @@
+{
+  "_comment": "India Meteorological Department (IMD) heatwave threshold criteria. Deployment must confirm exact threshold values with IMD guidelines.",
+  "notice": "Real-world operational deployments must calibrate and confirm thresholds with IMD.",
+  "regions": {
+    "plains": {
+      "name": "Plains",
+      "normal_tmax_range": [30.0, 40.0],
+      "heatwave_min_departure": 4.5,
+      "severe_min_departure": 6.4,
+      "heatwave_min_tmax": 45.0,
+      "severe_min_tmax": 47.0,
+      "departure_heatwave_inclusive": true,
+      "departure_severe_strict": true,
+      "tmax_inclusive": true
+    },
+    "hilly": {
+      "name": "Hilly regions",
+      "normal_tmax_range": [20.0, 30.0],
+      "heatwave_min_departure": 4.5,
+      "severe_min_departure": 6.4,
+      "heatwave_min_tmax": 30.0,
+      "severe_min_tmax": 35.0,
+      "departure_heatwave_inclusive": true,
+      "departure_severe_strict": true,
+      "tmax_inclusive": true
+    },
+    "coastal": {
+      "name": "Coastal regions",
+      "normal_tmax_range": [25.0, 35.0],
+      "heatwave_min_departure": 4.5,
+      "severe_min_departure": 6.4,
+      "heatwave_min_tmax": 35.0,
+      "severe_min_tmax": 37.0,
+      "departure_heatwave_inclusive": true,
+      "departure_severe_strict": true,
+      "tmax_inclusive": true
+    }
+  }
+}
